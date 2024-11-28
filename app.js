@@ -34,7 +34,7 @@ let filtersDictionary = Object.values(dictionary.categories).flat();
 
 // Mostrar todas las palabras con ejemplos
 const displayAllWords = () => {
-  searchResults.innerHTML = ''; // Clear previous results
+  searchResults.innerHTML = ''; 
   filtersDictionary.forEach((item) => {
     const li = document.createElement('li');
     li.textContent = `${item.spanish} - ${item.english} | Example: ${item.example}`;
@@ -42,12 +42,12 @@ const displayAllWords = () => {
   });
 };
 
-// Event listener para el botón "Mostrar todas las palabras"
+//Mostrar todas las palabras
 showAllWordsButton.addEventListener('click', () => {
   displayAllWords();
 });
 
-// Función para traducir palabras
+//traducir palabras
 translateButton.addEventListener('click', () => {
   const word = wordInput.value.trim().toLowerCase();
   const language = languageSelect.value;
@@ -89,7 +89,7 @@ translateButton.addEventListener('click', () => {
   }
 });
 
-// Event listener para añadir nuevas palabras  
+//añadir nuevas palabras  
 addWordForm.addEventListener('submit', (e) => {
   e.preventDefault(); 
 
@@ -127,7 +127,7 @@ const sortDictionary = (sortOption) => {
   displaySortedDictionary();
 };
 
-// Función para mostrar el diccionario ordenado
+//mostrar el diccionario ordenado
 const displaySortedDictionary = () => {
   searchResults.innerHTML = ''; 
   filtersDictionary.forEach((item) => {
