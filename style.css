@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  h1, h2 {
+    color: #4a90e2;
+    text-align: center;
+  }
+
+  .traduccion {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .traduccion input[type="text"],
+  .traduccion select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .traduccion button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .traduccion button:hover {
+    background-color: #357ab8;
+  }
+  
+
+  #translatedWord,
+  #translationExample {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e8f4ff;
+    border-radius: 4px;
+    border: 1px solid #d1e8f4;
+  }
+  
+  .nueva-palabra {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .nueva-palabra label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .nueva-palabra input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  .nueva-palabra button {
+    background-color: #32cd32;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .nueva-palabra button:hover {
+    background-color: #28a828;
+  }
+  
+
+  #searchResults {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #searchResults li {
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+
+  #showAllWordsButton {
+    background-color: #ff0101;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  #showAllWordsButton:hover {
+    background-color: #ff0000;
+  }
+  
+  /* textos mouse */
+h1:hover, h2:hover, p:hover, li:hover {
+    color: #ff0606; 
+    transition: color 0.3s; 
+  }
+  
+  /* Botones: mouse */
+  button:hover {
+    background-color: #357ab8; 
+    color: #ffffff; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  #translatedWord:hover,
+  #translationExample:hover {
+    color: #32cd32; 
+  }
+  
+  #searchResults li:hover {
+    color: #4a90e2;
+  }
+  

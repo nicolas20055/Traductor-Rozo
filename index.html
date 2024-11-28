@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Diccionario</h1>
+  
+  <div class="traduccion">
+    <input type="text" id="wordInput" placeholder="Escribe una palabra">
+    <select id="languageSelect">
+      <option value="Español a Inglés">Español a Inglés</option>
+      <option value="Inglés a Español">Inglés a Español</option>
+    </select>
+    <button id="translateButton">Traducir</button>
+    <p id="translatedWord"></p>
+    <p id="translationExample"></p>
+  </div>
+  
+  <div class="nueva-palabra">
+    <h2>Añadir nueva palabra</h2>
+    <form id="addWordForm">
+      <label for="newSpanish">Español:</label>
+      <input type="text" id="newSpanish" required><br>
+      <label for="newEnglish">Inglés:</label>
+      <input type="text" id="newEnglish" required><br>
+      <label for="newExample">Ejemplo:</label>
+      <input type="text" id="newExample" required><br>
+      <button type="submit">Añadir palabra</button>
+    </form>
+  </div>
+
+  <h2>Palabras disponibles</h2>
+  <div>
+    <label for="categorySelect">Seleccionar categoría:</label>
+    <select id="categorySelect"></select>
+    <button id="searchButton">Buscar</button>
+    <label for="sortSelect">Ordenar por:</label>
+    <select id="sortSelect">
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
+    </select>
+  </div>
+  
+  <ul id="searchResults"></ul>
+
+  <button id="showAllWordsButton">Mostrar todas las palabras</button>
+
+  <script type="module" src="dictionary.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
